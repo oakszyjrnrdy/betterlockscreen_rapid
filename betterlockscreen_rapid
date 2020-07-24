@@ -1,0 +1,46 @@
+#!/usr/bin/env sh
+
+# Author: oakszyjrnrdy
+# Github Profile: https://github.com/oakszyjrnrdy
+# Project Repository: https://github.com/oakszyjrnrdy/betterlockscreen_rapid
+
+# check args
+if [ "$#" -ne "2" ]; then
+	echo "Usage: $0 radius time" >&2
+	exit 3
+fi
+if [ "$1" -gt "0" ]; then
+	radius="$1"
+else
+	echo "Invalid argument radius $1" >&2
+	exit 1
+fi
+if [ "$2" -gt "0" ]; then
+	time="$2"
+else
+	echo "Invalid argument time $2" >&2
+	exit 2
+fi
+# read config
+config_file="betterlockscreen_rapid.conf"
+# system config
+source "/etc/$config_file"
+# user config
+user_config_file="${XDG_CONFIG_HOME:-$HOME/.config}/betterlockscreen_rapid/$config_file"
+if [ -f "$user_config_file" ]; then
+	source "$user_config_file"
+fi
+# run command
+i3lock-fancy-rapid "$radius" "$time" \
+	-t \
+	--timepos 'x+110:h-70' \
+	--datepos 'x+43:h-45' \
+	--clock --date-align 1 --datestr "$locktext" \
+	--insidecolor "$insidecolor" --ringcolor "$ringcolor" --line-uses-inside \
+	--keyhlcolor "$keyhlcolor" --bshlcolor "$bshlcolor" --separatorcolor "$separatorcolor" \
+	--insidevercolor "$insidevercolor" --insidewrongcolor "$insidewrongcolor" \
+	--ringvercolor "$ringvercolor" --ringwrongcolor "$ringwrongcolor" --indpos 'x+280:h-70' \
+	--radius "20" --ring-width "4" --veriftext '' --wrongtext '' \
+	--verifcolor "$verifcolor" --timecolor "$timecolor" --datecolor "$datecolor" \
+	--time-font "$font" --date-font "$font" --layout-font "$font" --verif-font "$font" --wrong-font "$font" \
+	--noinputtext '' --force-clock --pass-media-keys "$lockargs"
