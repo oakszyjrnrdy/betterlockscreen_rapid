@@ -20,7 +20,7 @@ Here is an example:
 
 #### Arch Linux
 
-Install the aur package `betterlockscreen_rapid`.
+Install the aur package [betterlockscreen_rapid-git](https://aur.archlinux.org/packages/betterlockscreen_rapid-git).
 
 #### Others
 
