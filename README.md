@@ -28,9 +28,9 @@ If you want to package it for other distributions, please let me known and I'll 
 
 ### Manual Installation
 
-Copy `betterlockscreen_rapid` to `/usr/bin/` or somewhere else in you `$PATH`.
-
-Copy `betterlockscreen_rapid.conf` to `/etc/`.
+1. Install all the dependencies.
+2. Copy `betterlockscreen_rapid` to `/usr/bin/` or somewhere else in you `$PATH`.
+3. Copy `betterlockscreen_rapid.conf` to `/etc/`.
 
 ## Configuration
 
