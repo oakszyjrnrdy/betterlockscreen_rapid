@@ -22,6 +22,12 @@ Here is an example:
 
 Install the aur package [betterlockscreen_rapid-git](https://aur.archlinux.org/packages/betterlockscreen_rapid-git).
 
+#### Gentoo Linux
+
+Thanks for [jian-lin](https://github.com/jian-lin)'s contribution.
+
+Install the [GURU](https://wiki.gentoo.org/wiki/Project:GURU) package `x11-misc/betterlockscreen_rapid`. Please refer to [this](https://github.com/oakszyjrnrdy/betterlockscreen_rapid/issues/1#issue-771802017) for more information.
+
 #### Others
 
 If you want to package it for other distributions, please let me known and I'll put the package information here.
