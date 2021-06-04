@@ -36,11 +36,11 @@ i3lock-fancy-rapid "$radius" "$time" \
 	--time-pos 'x+110:h-70' \
 	--date-pos 'x+43:h-45' \
 	--clock --date-align 1 --date-str "$locktext" \
-	--inside-color "$insidecolor" --ring-color "$ringcolor" --line-uses-inside \
-	--keyhl-color "$keyhlcolor" --bshl-color "$bshlcolor" --separator-color "$separatorcolor" \
-	--insidever-color "$insidevercolor" --insidewrong-color "$insidewrongcolor" \
-	--ringver-color "$ringvercolor" --ringwrong-color "$ringwrongcolor" --ind-pos 'x+280:h-70' \
+	--inside-color "$inside_color" --ring-color "$ring_color" --line-uses-inside \
+	--keyhl-color "$keyhl_color" --bshl-color "$bshl_color" --separator-color "$separatorcolor" \
+	--insidever-color "$insidever_color" --insidewrong-color "$insidewrong_color" \
+	--ringver-color "$ringver_color" --ringwrong-color "$ringwrong_color" --ind-pos 'x+280:h-70' \
 	--radius "20" --ring-width "4" --verif-text '' --wrong-text '' \
-	--verif-color "$verifcolor" --time-color "$timecolor" --date-color "$datecolor" \
+	--verif-color "$verif_color" --time-color "$time_color" --date-color "$date_color" \
 	--time-font "$font" --date-font "$font" --layout-font "$font" --verif-font "$font" --wrong-font "$font" \
 	--noinput-text '' --force-clock --pass-media-keys "$lockargs"
