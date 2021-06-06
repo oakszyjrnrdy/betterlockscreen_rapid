@@ -59,7 +59,7 @@ More information can be found at [i3lock-fancy-rapid][].
 
 ## Dependency
 
-- [i3lock-color][]
+- [i3lock-color][] >= 2.13.c.3
 - [i3lock-fancy-rapid][]
 
 ## LICENSE
