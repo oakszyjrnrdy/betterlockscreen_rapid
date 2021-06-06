@@ -33,14 +33,14 @@ fi
 # run command
 i3lock-fancy-rapid "$radius" "$time" \
 	-t \
-	--timepos 'x+110:h-70' \
-	--datepos 'x+43:h-45' \
-	--clock --date-align 1 --datestr "$locktext" \
-	--insidecolor "$insidecolor" --ringcolor "$ringcolor" --line-uses-inside \
-	--keyhlcolor "$keyhlcolor" --bshlcolor "$bshlcolor" --separatorcolor "$separatorcolor" \
-	--insidevercolor "$insidevercolor" --insidewrongcolor "$insidewrongcolor" \
-	--ringvercolor "$ringvercolor" --ringwrongcolor "$ringwrongcolor" --indpos 'x+280:h-70' \
-	--radius "20" --ring-width "4" --veriftext '' --wrongtext '' \
-	--verifcolor "$verifcolor" --timecolor "$timecolor" --datecolor "$datecolor" \
+	--time-pos 'x+110:h-70' \
+	--date-pos 'x+43:h-45' \
+	--clock --date-align 1 --date-str "$lock_text" \
+	--inside-color "$inside_color" --ring-color "$ring_color" --line-uses-inside \
+	--keyhl-color "$keyhl_color" --bshl-color "$bshl_color" --separator-color "$separator_color" \
+	--insidever-color "$insidever_color" --insidewrong-color "$insidewrong_color" \
+	--ringver-color "$ringver_color" --ringwrong-color "$ringwrong_color" --ind-pos 'x+280:h-70' \
+	--radius "20" --ring-width "4" --verif-text '' --wrong-text '' \
+	--verif-color "$verif_color" --time-color "$time_color" --date-color "$date_color" \
 	--time-font "$font" --date-font "$font" --layout-font "$font" --verif-font "$font" --wrong-font "$font" \
-	--noinputtext '' --force-clock --pass-media-keys "$lockargs"
+	--noinput-text '' --force-clock --pass-media-keys "$lockargs"
