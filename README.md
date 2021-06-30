@@ -57,6 +57,20 @@ betterlockscreen_rapid radius times
 
 More information can be found at [i3lock-fancy-rapid][].
 
+### Note
+
+`betterlockscreen` defaults to `nofork` mode.
+
+`nofork` mode may be benefical to you, e.g. you can pause you notificition before locking your screen and resume it after unlocking your screen like this:
+
+```bash
+dunstctl set-paused true
+betterlockscreen_rapid 31 3
+dunstctl set-paused false
+```
+
+If you do not want `nofork` mode, you can set `nofork='false'` in the [configuration](#configuration) to disable it.
+
 ## Dependency
 
 - [i3lock-color][] >= 2.13.c.3

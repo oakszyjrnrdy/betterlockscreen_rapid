@@ -30,6 +30,9 @@ user_config_file="${XDG_CONFIG_HOME:-$HOME/.config}/betterlockscreen_rapid/$conf
 if [ -f "$user_config_file" ]; then
 	source "$user_config_file"
 fi
+if [ "$nofork" = "true" ]; then
+	lockargs="--nofork"
+fi
 # run command
 i3lock-fancy-rapid "$radius" "$time" \
 	-t \
