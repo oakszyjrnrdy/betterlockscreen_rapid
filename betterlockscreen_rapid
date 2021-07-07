@@ -15,7 +15,7 @@ else
 	echo "Invalid argument radius $1" >&2
 	exit 1
 fi
-if [ "$2" -gt "0" ]; then
+if [ "$2" = "pixel" ] || [ "$2" -gt "0" ]; then
 	time="$2"
 else
 	echo "Invalid argument time $2" >&2
