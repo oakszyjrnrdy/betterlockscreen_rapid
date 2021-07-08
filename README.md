@@ -4,9 +4,11 @@ This is a shell script wrapper for [i3lock-fancy-rapid][] inspired by [betterloc
 
 It takes a screenshot, blurs it and use it as your lockscreen. All this is done in a very short period of time.
 
-Here is an example:
+Here are two examples:
 
-![screenshot](screenshot.png)
+![screenshot_blur](screenshot_blur.png)
+
+![screenshot_pixel](screenshot_pixel.png)
 
 ## Feature
 
@@ -49,11 +51,12 @@ Note that `$XDG_CONFIG_HOME` defaults to `$HOME/.config/`.
 ## Usage
 
 ```bash
-betterlockscreen_rapid radius times
+betterlockscreen_rapid radius [times | pixel]
 ```
 
 - `radius` is the kernel size of the box filter.
 - `times` is the number of times we filter the image.
+- `pixel` for pixelization
 
 More information can be found at [i3lock-fancy-rapid][].
 
